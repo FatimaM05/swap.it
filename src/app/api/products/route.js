@@ -77,7 +77,6 @@ export async function GET(req) {
       currentPage: page,
       totalPages: Math.ceil(totalCount / limit),
     });
-
   } catch (err) {
     // console.error(err);
     console.error('API /api/products error:', err.message, err.stack);
