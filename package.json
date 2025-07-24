@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@mui/material": "^7.1.0",
@@ -31,4 +32,5 @@
   "prisma": {
     "schema": "lib/prisma/schema.prisma"
   }
+
 }
