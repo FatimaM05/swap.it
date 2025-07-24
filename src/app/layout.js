@@ -20,6 +20,9 @@ const jost = Jost({
 export const metadata = {
   title: "swap.it",
   description: "Discover, buy, exchange, or donate items easily with Swap It — your trusted community marketplace.",
+   icons: {
+    icon: "/images/swap.itLogo.png", 
+  },
 };
 
 
@@ -27,9 +30,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/images/swap.itLogo.png" type="image/png" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jost.variable} antialiased bg-white`}
       >
