@@ -200,10 +200,18 @@ function AllCategoriesClient() {
     }, [selectedCategory, selectedFilters, currentPage]);  // fetch again if page changes
 
     //(Filter products for display)//
-    const filteredProducts = products.filter((p) => {
-      const matchTitle = isSearching ? true: p.title.toLowerCase().includes(searchQuery.toLowerCase());
+    // const filteredProducts = products.filter((p) => {
+    //   const matchTitle = isSearching ? true: p.title.toLowerCase().includes(searchQuery.toLowerCase());
+    //   return matchTitle;
+    // });
+
+  const filteredProducts = Array.isArray(products)
+  ? products.filter((p) => {
+      const matchTitle = isSearching ? true : p.title.toLowerCase().includes(searchQuery.toLowerCase());
       return matchTitle;
-    });
+    })
+  : [];
+
 
     //here comes the UI we all were waiting for...probably not
 
