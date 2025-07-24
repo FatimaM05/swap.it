@@ -67,7 +67,7 @@ export async function GET(req) {
     // Format products - map images urls cleanly
     const formatted = products.map(p => ({
       ...p,
-      images: p.images.map(img => img.url).filter(url => url && url.trim() !== ''),
+      images: (p.images || []).map(img => img.url).filter(url => url && url.trim() !== ''),
     }));
 
     // Return data
