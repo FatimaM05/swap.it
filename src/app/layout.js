@@ -21,7 +21,7 @@ export const metadata = {
   title: "swap.it",
   description: "Discover, buy, exchange, or donate items easily with Swap It — your trusted community marketplace.",
    icons: {
-    icon: "/images/swap.itLogo.png", 
+    icon: "/favicon.ico", 
   },
 };
 

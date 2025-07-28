@@ -8,7 +8,7 @@ export default function Head() {
         name="description"
         content="Discover, buy, exchange, or donate items easily with Swap It — your trusted community marketplace."
       />
-      <link rel="icon" href="/images/swap.itLogo.png" type="image/png" />
+      <link rel="icon" href="/favicon.ico" />
     </>
   );
 }
