@@ -96,7 +96,7 @@ function AllCategoriesClient() {
       const res = await fetch(`/api/products?${queryParams}`);
       const data = await res.json();
       setProducts(data.products);
-      setTotalPages(data.totalPages);
+      setTotalPages(data.totalPages || 1);
     }
     
     //(Normal page revival Function)ie. after seacrh you want normal thingies page
@@ -122,7 +122,7 @@ function AllCategoriesClient() {
       const res = await fetch(`/api/products?${queryParams.toString()}`);
       const data = await res.json();
       setProducts(data.products);
-      setTotalPages(data.totalPages);
+      setTotalPages(data.totalPages ||1);
     }
 
         
@@ -189,7 +189,7 @@ function AllCategoriesClient() {
             setPage(1);
           } else {
             setProducts(data.products);
-            setTotalPages(data.totalPages);
+            setTotalPages(data.totalPages || 1);
           }
         } catch (error) {
           console.error("Fetch error:", error.message);
