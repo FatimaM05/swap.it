@@ -211,3 +211,130 @@ This project is developed for **academic purposes**.
 All rights reserved by the authors.
 
 Co-authored-by:  <hadeedtariq50@gmail.com>
+
+## --------------------GET STARTED-------------------------
+
+##  NEXT STEP: Installation & Setup Guide (Local + Supabase)
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Prerequisites
+
+Make sure you have the following installed:
+
+* **Node.js** (v18 or later)
+* **npm** or **yarn**
+* **PostgreSQL** (or Supabase)
+* **Git**
+
+---
+
+### 2️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-username/swap.it.git
+cd swap.it
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+---
+
+### 4️⃣ Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+JWT_SECRET=your_secret_key
+```
+
+📌 **Notes**
+
+* Get Supabase keys from **Supabase Dashboard → Project Settings → API**
+* `DATABASE_URL` is provided by Supabase under **Database → Connection string**
+
+---
+
+### 5️⃣ Prisma Setup
+
+Generate Prisma client:
+
+```bash
+npx prisma generate
+```
+
+Run migrations:
+
+```bash
+npx prisma migrate dev
+```
+
+(Optional) Open Prisma Studio:
+
+```bash
+npx prisma studio
+```
+
+---
+
+### 6️⃣ Supabase Configuration
+
+Enable the following in Supabase:
+
+* ✅ **Email Auth**
+* ✅ **Google OAuth**
+* ✅ **Storage Buckets** (for images)
+* ✅ **Row Level Security (RLS)**
+
+Create buckets:
+
+* `product-images`
+* `profile-images`
+
+---
+
+### 7️⃣ Run the Development Server
+
+```bash
+npm run dev
+```
+
+Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+### 8️⃣ Real-Time Messaging (Sockets)
+
+* Socket.io initializes automatically with the server
+* WebRTC enables peer-to-peer chat
+* No extra setup required for local testing
+
+---
+
+## ✅ Project is Ready 🎉
+
+You can now:
+
+* Register users
+* Create product/donation listings
+* Test credit transactions
+* Chat in real-time
+* Manage dashboard & profiles
+
+---
