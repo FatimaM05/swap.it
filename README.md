@@ -210,10 +210,6 @@ The platform is architected with **scalability, modularity, and user-centric des
 This project is developed for **academic purposes**.
 All rights reserved by the authors.
 
-Co-authored-by:  <hadeedtariq50@gmail.com>
-
-## --------------------GET STARTED-------------------------
-
 ##  NEXT STEP: Installation & Setup Guide (Local + Supabase)
 
 ## ⚙️ Installation & Setup
