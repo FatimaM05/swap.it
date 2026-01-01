@@ -15,7 +15,7 @@
     "@supabase/supabase-js": "^2.49.8",
     "axios": "^1.9.0",
     "formidable": "^3.5.4",
-    "next": "^15.3.2",
+    "next": "15.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "socket.io": "^4.8.1",
@@ -32,5 +32,4 @@
   "prisma": {
     "schema": "lib/prisma/schema.prisma"
   }
-
 }
