@@ -4,7 +4,53 @@
 
 A **full-stack, community-driven open marketplace platform** for buying, selling, exchanging, and donating second-hand items using **cash, item swaps, or internal credits**.
 
+[![Next.js](https://img.shields.io/badge/Next.js-13.4-blue?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-blue?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-1.0-00c86f?logo=supabase&logoColor=white)](https://supabase.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-blue?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-4.15-blue?logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-4.7-black?logo=socket.io&logoColor=white)](https://socket.io/)
+[![WebRTC](https://img.shields.io/badge/WebRTC-1.0-blue?logo=webrtc&logoColor=white)](https://webrtc.org/)
+[![License](https://img.shields.io/badge/License-Academic-orange)](#-license)
 ---
+## 📖 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Objectives & Goals](#-objectives--goals)
+- [Target Audience](#-target-audience)
+- [Features](#-features)
+  - [User Authentication & Onboarding](#-user-authentication--onboarding)
+  - [Product Listing & Management (CRUD)](#-product-listing--management-crud)
+  - [Multi-Modal Transactions](#-multi-modal-transactions)
+  - [Donation Framework](#-donation-framework)
+  - [Internal Credit Economy](#-internal-credit-economy)
+  - [Buyer–Seller Messaging](#-buyer–seller-messaging)
+  - [Dynamic Search & Filtering](#-dynamic-search--filtering)
+  - [Public Seller Profiles](#-public-seller-profiles)
+  - [Product Detail Pages](#-product-detail-pages)
+  - [Fully Responsive UI](#-fully-responsive-ui)
+- [Tech Stack](#-tech-stack)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+  - [Database & Storage](#database--storage)
+  - [Real-Time Communication](#real-time-communication)
+- [System Architecture](#-system-architecture)
+- [Core Modules](#-core-modules)
+- [Limitations](#-limitations)
+- [Future Scope](#-future-scope)
+- [Developed By](#-developed-by)
+- [License](#-license)
+- [Installation & Setup](#-installation--setup)
+  - [Prerequisites](#1️⃣-prerequisites)
+  - [Clone the Repository](#2️⃣-clone-the-repository)
+  - [Install Dependencies](#3️⃣-install-dependencies)
+  - [Environment Variables](#4️⃣-environment-variables)
+  - [Prisma Setup](#5️⃣-prisma-setup)
+  - [Supabase Configuration](#6️⃣-supabase-configuration)
+  - [Run the Development Server](#7️⃣-run-the-development-server)
+  - [Real-Time Messaging (Sockets)](#8️⃣-real-time-messaging-sockets)
+
 
 ## 📌 Project Overview
 
